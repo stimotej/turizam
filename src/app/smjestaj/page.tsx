@@ -56,9 +56,7 @@ export default function Home() {
               SD &quot;STJEPAN RADIĆ&quot;
             </h2>
             <a
-              href="https://www.booking.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://turizam.sczg.hr/hostel"
               className={cn(buttonClassName, "mt-12 mx-auto")}
             >
               REZERVIRAJ
@@ -140,9 +138,7 @@ export default function Home() {
               SD &quot;CVJETNO NASELJE&quot;
             </h2>
             <a
-              href="https://www.booking.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://turizam.sczg.hr/hostel"
               className={cn(buttonClassName, "mt-12 mx-auto")}
             >
               REZERVIRAJ
