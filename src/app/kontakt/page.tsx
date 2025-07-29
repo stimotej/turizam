@@ -1,4 +1,5 @@
 import Button from "@/modules/common/components/button";
+import ContactForm from "@/modules/contact/form";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -35,52 +36,7 @@ export default function Home() {
             <p className="text-neutral-800 mt-4">Broj telefona</p>
             <p className="text-neutral-500">01/4593-671</p>
 
-            <form className="mt-6 space-y-4">
-              <div className="flex flex-col">
-                <label
-                  htmlFor="name"
-                  className="font-semibold text-neutral-800"
-                >
-                  Vaše ime
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  autoComplete="name"
-                  className="mt-0.5 p-2 rounded-md border border-neutral-300 transition-colors hover:border-neutral-800 focus:!border-(--primary) invalid:!border-red-500 outline-none"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label
-                  htmlFor="email"
-                  className="font-semibold text-neutral-800"
-                >
-                  E-mail
-                </label>
-                <input
-                  id="email"
-                  type="email"
-                  autoComplete="email"
-                  className="mt-0.5 p-2 rounded-md border border-neutral-300 transition-colors hover:border-neutral-800 focus:!border-(--primary) invalid:!border-red-500 outline-none"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label
-                  htmlFor="message"
-                  className="font-semibold text-neutral-800"
-                >
-                  Poruka
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="mt-0.5 p-2 rounded-md border border-neutral-300 transition-colors hover:border-neutral-800 focus:!border-(--primary) invalid:!border-red-500 outline-none"
-                />
-              </div>
-              <Button className="w-full" type="submit">
-                Pošalji
-              </Button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </div>

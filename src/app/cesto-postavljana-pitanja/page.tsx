@@ -1,3 +1,4 @@
+import { faq } from "@/lib/utils/constants";
 import {
   Accordion,
   AccordionContent,
@@ -18,26 +19,14 @@ export default function Home() {
           Često postavljana pitanja
         </h1>
         <Accordion type="multiple" className="w-full mt-12">
-          <AccordionItem value="item-1">
-            <AccordionTrigger>1. Kako rezervirati smještaj?</AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-4 text-balance">
-              <p>Odgovor</p>
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>
-              2. Postoji li mogućnost polupansiona?
-            </AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-4 text-balance">
-              <p>Odgovor</p>
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger>3. Često postavljana pitanja</AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-4 text-balance">
-              <p>Odgovor</p>
-            </AccordionContent>
-          </AccordionItem>
+          {faq.map((item) => (
+            <AccordionItem key={item.title} value={item.title}>
+              <AccordionTrigger>{item.title}</AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance">
+                <p>{item.description}</p>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
         </Accordion>
       </div>
     </main>
