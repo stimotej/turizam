@@ -14,7 +14,7 @@ export default function Home() {
       <div className="bg-(--background) px-4 md:px-6 lg:px-10 py-10 md:py-12 lg:py-16">
         <Image
           alt="Studentski Centar u Zagrebu"
-          src="/hero.webp"
+          src="/turizam/hero.webp"
           width={730}
           height={270}
           className="mx-auto object-cover w-full h-auto max-w-[730px]"

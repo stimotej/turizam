@@ -1,4 +1,3 @@
-import Button from "@/modules/common/components/button";
 import ContactForm from "@/modules/contact/form";
 import type { Metadata } from "next";
 

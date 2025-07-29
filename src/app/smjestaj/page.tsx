@@ -25,7 +25,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
           <figure>
             <Image
-              src="/stjepan-radic.webp"
+              src="/turizam/stjepan-radic.webp"
               alt='SD "Stjepan Radić"'
               width={700}
               height={256}
@@ -37,7 +37,7 @@ export default function Home() {
           </figure>
           <figure>
             <Image
-              src="/cvjetno-naselje.webp"
+              src="/turizam/cvjetno-naselje.webp"
               alt='SD "Cvjetno naselje"'
               width={700}
               height={256}

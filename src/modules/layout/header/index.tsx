@@ -33,7 +33,7 @@ export default function Header() {
         className="flex items-center gap-4"
       >
         <Image
-          src="/logo.webp"
+          src="/turizam/logo.webp"
           className="w-24 h-16"
           alt="Studentski Centar Zagreb logo"
           width={96}
