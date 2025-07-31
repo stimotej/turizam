@@ -26,9 +26,9 @@ export default function Home() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium uppercase font-display">
             REZERVACIJE
           </h1>
-          <p className="text-base md:text-lg text-neutral-500 mt-2">
+          {/* <p className="text-base md:text-lg text-neutral-500 mt-2">
             Registracije potvrđujemo u roku od jednog dana
-          </p>
+          </p> */}
         </div>
         <div className="mt-16 flex flex-col md:flex-row gap-4">
           <div className="flex-1">
