@@ -11,6 +11,8 @@ import { homepageImages } from "@/lib/utils/constants";
 export default function Home() {
   return (
     <main className="max-w-[1520px] mx-auto bg-(--primary) px-4 md:px-6 lg:px-10 py-10 md:py-12 lg:py-16 min-h-[80vh]">
+      <h1 className="sr-only">SC HOSTEL</h1>
+
       <div className="bg-(--background) px-4 md:px-6 lg:px-10 py-10 md:py-12 lg:py-16">
         <Image
           alt="Studentski Centar u Zagrebu"
@@ -22,14 +24,6 @@ export default function Home() {
         <Link href="/smjestaj" className={cn(buttonClassName, "mx-auto mt-16")}>
           REZERVIRAJ SMJEŠTAJ
         </Link>
-        <div className="text-center mt-16">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium uppercase font-display">
-            REZERVACIJE
-          </h1>
-          {/* <p className="text-base md:text-lg text-neutral-500 mt-2">
-            Registracije potvrđujemo u roku od jednog dana
-          </p> */}
-        </div>
         <div className="mt-16 flex flex-col md:flex-row gap-4">
           <div className="flex-1">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-medium">
