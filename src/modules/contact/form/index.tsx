@@ -11,6 +11,17 @@ export default function ContactForm() {
   return (
     <>
       <form className="mt-6 space-y-4" action={formAction}>
+        {/* Honeypot field */}
+        <div className="hidden" aria-hidden="true">
+          <label htmlFor="website">Website (leave empty)</label>
+          <input
+            type="text"
+            id="website"
+            name="website"
+            tabIndex={-1}
+            autoComplete="off"
+          />
+        </div>
         <div className="flex flex-col">
           <label htmlFor="name" className="font-semibold text-neutral-800">
             Vaše ime

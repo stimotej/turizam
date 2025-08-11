@@ -14,6 +14,14 @@ export async function contactEmail(
   const name = formData.get("name") as string;
   const email = formData.get("email") as string;
   const message = formData.get("message") as string;
+  const honeypot = formData.get("website") as string;
+
+  if (honeypot) {
+    return {
+      success: true,
+      message: "Poruka je uspješno poslana! Hvala Vam!",
+    };
+  }
 
   if (
     !name ||
