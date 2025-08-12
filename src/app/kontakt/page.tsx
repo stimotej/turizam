@@ -32,8 +32,30 @@ export default function Home() {
               Savska cesta 25, 10 000 Zagreb,
             </p>
             <p className="text-neutral-500">Hrvatska</p>
-            <p className="text-neutral-800 mt-4">Broj telefona</p>
-            <p className="text-neutral-500">01/4593-671</p>
+            <dl className="flex items-center gap-x-8 gap-y-4 flex-wrap mt-4">
+              <div>
+                <dt className="text-neutral-800">Broj telefona</dt>
+                <dd>
+                  <a
+                    className="text-(--primary) hover:underline"
+                    href="tel:01/4593-861"
+                  >
+                    01/4593-861
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="text-neutral-800">Email</dt>
+                <dd>
+                  <a
+                    className="text-(--primary) hover:underline"
+                    href="mailto:turizam@sczg.hr"
+                  >
+                    turizam@sczg.hr
+                  </a>
+                </dd>
+              </div>
+            </dl>
 
             <ContactForm />
           </div>
