@@ -35,7 +35,7 @@ export async function contactEmail(
   }
 
   try {
-    await fetchApi("/contact/submit", {
+    await fetchApi("/contact/turizam/submit", {
       method: "POST",
       body: JSON.stringify({ name, email, message }),
     });

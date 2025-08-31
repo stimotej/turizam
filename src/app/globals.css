@@ -19,3 +19,15 @@ body {
   color: var(--foreground);
   font-family: var(--font-merriweather-body), Arial, Helvetica, sans-serif;
 }
+
+.ql-align-center {
+  text-align: center;
+}
+
+.ql-align-right {
+  text-align: right;
+}
+
+.ql-align-justify {
+  text-align: justify;
+}
