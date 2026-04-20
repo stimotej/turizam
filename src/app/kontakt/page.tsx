@@ -38,9 +38,9 @@ export default function Home() {
                 <dd>
                   <a
                     className="text-(--primary) hover:underline"
-                    href="tel:01/4593-861"
+                    href="tel:01/4590-816"
                   >
-                    01/4593-861
+                    01/4590-816
                   </a>
                 </dd>
               </div>
