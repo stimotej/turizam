@@ -94,21 +94,21 @@ export default async function Home() {
               <PhotoProvider maskOpacity={0.8}>
                 <div className="grid grid-cols-2 gap-4">
                   {post.meta.images.map((img, index) => (
-                    <PhotoView key={index} src={img}>
-                      <div
-                        className={cn(
-                          index === 0 ? "col-span-2" : "col-span-1",
-                          "overflow-hidden"
-                        )}
-                      >
-                        <Image
-                          src={img}
-                          alt={clearHtmlFromString(post.title.rendered)}
-                          width={440}
-                          height={192}
-                          className="w-full h-48 object-cover transition-transform hover:scale-110 cursor-pointer"
-                        />
-                      </div>
+                    <PhotoView
+                      key={index}
+                      src={img}
+                      className={cn(
+                        index === 0 ? "col-span-2" : "col-span-1",
+                        "overflow-hidden"
+                      )}
+                    >
+                      <Image
+                        src={img}
+                        alt={clearHtmlFromString(post.title.rendered)}
+                        width={440}
+                        height={192}
+                        className="w-full h-48 object-cover transition-transform hover:scale-110 cursor-pointer"
+                      />
                     </PhotoView>
                   ))}
                 </div>

@@ -2,7 +2,7 @@
 
 import {
   PhotoProvider as DefaultPhotoProvider,
-  PhotoView,
+  PhotoView as DefaultPhotoView,
 } from "react-photo-view";
 import RotateCwIcon from "../icons/rotate-cw";
 import ZoomInIcon from "../icons/zoom-in";
@@ -45,6 +45,25 @@ function PhotoProvider(
       }}
       {...props}
     />
+  );
+}
+
+// The library's PhotoView calls cloneElement on its child. Children sent from a
+// server page can arrive as lazy references rather than elements, and cloning
+// one yields "Element type is invalid ... got: undefined" during prerender. So
+// the cloned element is a div created here, carrying the caller's className.
+function PhotoView({
+  className,
+  children,
+  ...props
+}: Omit<React.ComponentProps<typeof DefaultPhotoView>, "children"> & {
+  className?: string;
+  children?: React.ReactNode;
+}) {
+  return (
+    <DefaultPhotoView {...props}>
+      <div className={className}>{children}</div>
+    </DefaultPhotoView>
   );
 }
 
