@@ -57,16 +57,14 @@ export default async function Home() {
         <PhotoProvider maskOpacity={0.8}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-16">
             {homepagePost.meta.images.map((img, index) => (
-              <PhotoView key={index} src={img}>
-                <div className="overflow-hidden">
-                  <Image
-                    src={img}
-                    alt="SC hostel"
-                    width={700}
-                    height={256}
-                    className="w-full h-64 object-cover transition-transform hover:scale-110 cursor-pointer"
-                  />
-                </div>
+              <PhotoView key={index} src={img} className="overflow-hidden">
+                <Image
+                  src={img}
+                  alt="SC hostel"
+                  width={700}
+                  height={256}
+                  className="w-full h-64 object-cover transition-transform hover:scale-110 cursor-pointer"
+                />
               </PhotoView>
             ))}
           </div>
